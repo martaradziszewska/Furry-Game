@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+	font-family: "Oswald", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background-color: #FF4057;
+	position: relative;
+}
+
+section#score {
+  width: 100%;
+}
+
+#board {
+  width: 650px;
+  height: 650px;
+  margin: 2em auto;
+
+
+
+}
+
+#board  > div {    
+  border: 2px solid #FF4057;
+  float: left;
+  width: 65px;
+  height: 65px;
+	background-color: white;
+}
+
+
+section#score div {
+  width: 10em;
+  height: 4em;
+  text-align: center;
+  padding: 0.5em;
+	background-color: #573dd9;
+	color: white;
+  border-radius: 1px;
+  margin: 3em auto;
+	
+}
+
+
+
+
+
+.furry {
+  background-image: url('../images/furry2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.coin {
+	position: relative;
+}
+
+.coin::after {
+	content: "$";
+	color: white;
+	font-size: 28px;
+	font-weight: 900;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.coin::before {
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	width: 40px;
+	height: 40px;
+	background-color: #FCB82F;
+	display: block;
+	content: "";
+	box-shadow: 0 0 0 5px #FFE37F;
+}
+
+
+
+
+
+section#over {
+  position: fixed;
+
+  width: 640px;
+
+  left: 50%;
+  top: 40%;
+	transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 20px;
+  background-color: #573dd9;
+
+}
+
+section#over div {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bolder;
+  color: brown;
+  color: white;
+	font-size: 32px;
+}
+
+
+section#over button {
+	border: 1px solid #573dd9;
+	width: 50%;
+	margin-left: 25%;
+	background-color: #FF4057;
+	color: white;
+	font-size: 22px;
+	margin-bottom: 20px;
+	
+}
+
+.invisible {
+  display: none;
+}
