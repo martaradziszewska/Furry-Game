@@ -1,5 +1,3 @@
-console.log("hello");
-
 
 var Furry = function () {
 	this.x = 0;
@@ -48,12 +46,12 @@ var Game = function () {
 		}
 		this.gameOver();
 		this.showFurry();
-		
+
 		this.checkCoinCollision();
-		
+
 		document.addEventListener("keydown", function () {
-		self.turnFurry(event);
-	});
+			self.turnFurry(event);
+		});
 
 	}
 	this.hideVisibleFurry = function () {
@@ -98,11 +96,11 @@ var Game = function () {
 			board.style.display = "none";
 			over.style.display = "block";
 			var button = over.querySelector("button");
-			button.addEventListener("click", function() {
+			button.addEventListener("click", function () {
 				location.reload();
 			})
-			
-			
+
+
 		}
 	}
 
@@ -115,12 +113,3 @@ var gameNew = new Game();
 gameNew.showFurry();
 gameNew.showCoin();
 gameNew.startGame;
-
-
-
-
-
-
-
-
-
