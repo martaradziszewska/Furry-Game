@@ -28,11 +28,6 @@ var Game = function () {
 		this.board[this.index(this.coin.x, this.coin.y)].classList.add("coin");
 	}
 	
-	
-//	this.welcomeBoard = function() {
-//		board.style.display = "none";
-//		
-//	}
 
 	this.startGame = setInterval(function () {
 		self.moveFurry()
@@ -123,8 +118,7 @@ startButton.addEventListener("click", function() {
 	gameNew.showFurry();
 	gameNew.showCoin();
 	gameNew.startGame;
-	
-	
-})
+
+});
 
 

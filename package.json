@@ -1,7 +1,6 @@
 {
-  "name": "wro_fer_w_05_react_furry_game",
+  "name": "Furry-Game",
   "version": "1.0.0",
-  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
   "main": "index.js",
   "dependencies": {
     "webpack": "^4.8.2",
@@ -13,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martaradziszewska/WRO_FER_W_05_REACT_Furry_Game.git"
+    "url": "git+https://github.com/martaradziszewska/Furry-Game"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martaradziszewska/WRO_FER_W_05_REACT_Furry_Game/issues"
+    "url": "https://github.com/martaradziszewska/Furry-Game/issues"
   },
-  "homepage": "https://github.com/martaradziszewska/WRO_FER_W_05_REACT_Furry_Game#readme"
+  "homepage": "https://github.com/martaradziszewska/Furry-Game#readme"
 }
