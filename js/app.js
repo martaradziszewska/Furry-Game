@@ -27,6 +27,12 @@ var Game = function () {
 	this.showCoin = function () {
 		this.board[this.index(this.coin.x, this.coin.y)].classList.add("coin");
 	}
+	
+	
+//	this.welcomeBoard = function() {
+//		board.style.display = "none";
+//		
+//	}
 
 	this.startGame = setInterval(function () {
 		self.moveFurry()
@@ -107,9 +113,18 @@ var Game = function () {
 }
 
 
+var startButton = document.querySelector("#start-btn");
+
+startButton.addEventListener("click", function() {
+	document.querySelector("#welcome").classList.add("invisible");
+	document.querySelector("#score").classList.remove("invisible");
+	document.querySelector("#board").classList.remove("invisible");
+	var gameNew = new Game();
+	gameNew.showFurry();
+	gameNew.showCoin();
+	gameNew.startGame;
+	
+	
+})
 
 
-var gameNew = new Game();
-gameNew.showFurry();
-gameNew.showCoin();
-gameNew.startGame;
