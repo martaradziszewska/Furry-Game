@@ -1,57 +1,236 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: "Oswald", Arial, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	background-color: #FF4057;
-	position: relative;
+
 }
 
+section#welcome {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+section#welcome .wrapper {
+	width: 100vw;
+	height: 1px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+section#welcome button {
+	width: 25rem;
+	height: 5rem;
+	position: absolute;
+	color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #573dd9;
+	border: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 2px solid white;
+	z-index: 1;
+	cursor: pointer;
+}
+
+
+
+
+/*FURRY WELCOME*/
+
+.welcome-furry {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	background-color: #573dd9;
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+}
+
+/*legs for furry welcome*/
+
+.welcome-furry:before {
+	content: "";
+	display: block;
+	width: 0.7rem;
+	height: 1.5rem;
+	background-color: #573dd9;
+	position: absolute;
+	bottom: -1rem;
+	left: 2.5rem;
+	box-shadow: 2rem 0 0 0 #573dd9;
+}
+
+/*feet for furry welcome*/
+
+.welcome-furry:after {
+	content: "";
+	display: block;
+	width: 1.6rem;
+	height: 0.8rem;
+	border-top-left-radius: 1.6rem;
+	border-top-right-radius: 1.6rem;
+	background-color: #573dd9;
+	position: absolute;
+	bottom: -1rem;
+	left: 1.6rem;
+	box-shadow: 2rem 0 0 0 #573dd9;
+}
+
+/*EYES FOR THE FURRY WELCOME*/
+
+.face-furry {
+	border: 10px solid white;
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+}
+
+.face-furry:before {
+	content: "";
+	display: block;
+	background-color: white;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 45%;
+	top: 20%;
+	box-shadow: -0.3rem 0.3rem 0 0.4rem black;
+}
+
+/*smile for furry welcome*/
+
+.face-furry:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -55%;
+	top: 80%;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: transparent;
+	border-bottom-left-radius: 3rem;
+	border: 0.5rem solid black;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-5deg);
+
+}
+
+.tongue-furry {
+	width: 1.8rem;
+	height: 0.9rem;
+	background-color: #FF4057;
+	border-bottom-left-radius: 1.8rem;
+	border-bottom-right-radius: 1.8rem;
+	position: absolute;
+	bottom: 1.2rem;
+	left: 1rem;
+	transform: rotate(40deg);
+
+}
+
+
+/*FURRY HAIR WELCOME*/
+
+.hair-furry {
+	width: 0;
+	height: 0;
+	border-left: 0.8rem solid transparent;
+	border-right: 0.8rem solid transparent;
+	border-bottom: 2rem solid #573dd9;
+	position: absolute;
+	top: 0.4rem;
+	left: -0.2rem;
+}
+
+.hair-furry:before {
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	border-left: 0.6rem solid transparent;
+	border-right: 0.6rem solid transparent;
+	border-bottom: 2rem solid #573dd9;
+	position: absolute;
+	top: 0.8rem;
+	left: -1.2rem;
+	transform: rotate(-35deg);
+
+}
+
+.hair-furry:after {
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	border-left: 0.7rem solid transparent;
+	border-right: 0.7rem solid transparent;
+	border-bottom: 2rem solid #573dd9;
+	position: absolute;
+	top: 2rem;
+	left: -1.5rem;
+	transform: rotate(-55deg);
+
+}
+
+
+
 section#score {
-  width: 100%;
+	width: 100%;
 }
 
 #board {
-  width: 650px;
-  height: 650px;
-  margin: 2em auto;
-
-
+	width: 650px;
+	height: 650px;
+	margin: 2em auto;
 
 }
 
-#board  > div {    
-  border: 2px solid #FF4057;
-  float: left;
-  width: 65px;
-  height: 65px;
+#board > div {
+	border: 2px solid #FF4057;
+	float: left;
+	width: 65px;
+	height: 65px;
 	background-color: white;
 }
 
 
 section#score div {
-  width: 10em;
-  height: 4em;
-  text-align: center;
-  padding: 0.5em;
+	width: 10em;
+	height: 4em;
+	text-align: center;
+	padding: 0.5em;
 	background-color: #573dd9;
 	color: white;
-  border-radius: 1px;
-  margin: 3em auto;
-	
+	border-radius: 1px;
+	margin: 3em auto;
+
 }
 
-
-
-
-
 .furry {
-  background-image: url('../images/furry2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url('../images/furry-2-01.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
@@ -69,7 +248,7 @@ section#score div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);	
+	transform: translate(-50%, -50%);
 }
 
 .coin::before {
@@ -77,7 +256,7 @@ section#score div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);	
+	transform: translate(-50%, -50%);
 	width: 40px;
 	height: 40px;
 	background-color: #FCB82F;
@@ -91,27 +270,24 @@ section#score div {
 
 
 section#over {
-  position: fixed;
-
-  width: 640px;
-
-  left: 50%;
-  top: 40%;
+	position: fixed;
+	width: 640px;
+	left: 50%;
+	top: 40%;
 	transform: translate(-50%, -50%);
-  z-index: 1;
-  padding: 20px;
-  background-color: #573dd9;
+	z-index: 1;
+	padding: 20px;
+	background-color: #573dd9;
 
 }
 
 section#over div {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  font-weight: bolder;
-  color: brown;
-  color: white;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bolder;
+	color: white;
 	font-size: 32px;
 }
 
@@ -124,9 +300,9 @@ section#over button {
 	color: white;
 	font-size: 22px;
 	margin-bottom: 20px;
-	
+
 }
 
 .invisible {
-  display: none;
+	display: none;
 }
